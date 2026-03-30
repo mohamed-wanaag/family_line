@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="12" fill="#875A7B"/>
+  <!-- Parents -->
+  <circle cx="30" cy="25" r="10" fill="white" opacity="0.9"/>
+  <circle cx="70" cy="25" r="10" fill="white" opacity="0.9"/>
+  <!-- Connecting line -->
+  <line x1="30" y1="35" x2="70" y2="35" stroke="white" stroke-width="2.5" opacity="0.7"/>
+  <!-- Drop to child -->
+  <line x1="50" y1="35" x2="50" y2="55" stroke="white" stroke-width="2.5" opacity="0.7"/>
+  <!-- Child -->
+  <circle cx="50" cy="65" r="10" fill="white" opacity="0.9"/>
+  <!-- Grandchildren lines -->
+  <line x1="50" y1="75" x2="50" y2="82" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="28" y1="82" x2="72" y2="82" stroke="white" stroke-width="2" opacity="0.6"/>
+  <circle cx="28" cy="88" r="6" fill="white" opacity="0.7"/>
+  <circle cx="50" cy="88" r="6" fill="white" opacity="0.7"/>
+  <circle cx="72" cy="88" r="6" fill="white" opacity="0.7"/>
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         ROOT MENU
+    ══════════════════════════════════════════════════════════════════ -->
+    <menuitem
+        id="menu_family_hierarchy_root"
+        name="Family Hierarchy"
+        sequence="90"
+        web_icon="family_hierarchy,static/description/icon.png"
+        groups="base.group_user"/>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         MAIN SECTIONS
+    ══════════════════════════════════════════════════════════════════ -->
+    <menuitem
+        id="menu_family_main"
+        name="Family"
+        parent="menu_family_hierarchy_root"
+        sequence="10"
+        groups="base.group_user"/>
+
+    <menuitem
+        id="menu_family_person"
+        name="Members"
+        parent="menu_family_main"
+        action="action_family_person"
+        sequence="10"
+        groups="base.group_user"/>
+
+   
+
+    <!-- <menuitem
+        id="menu_family_event"
+        name="Life Events"
+        parent="menu_family_main"
+        action="action_family_event"
+        sequence="30"
+        groups="base.group_user"/> -->
+
+    <!-- ══════════════════════════════════════════════════════════════
+         CONFIGURATION (Manager Only)
+    ══════════════════════════════════════════════════════════════════ -->
+    <menuitem
+        id="menu_family_config"
+        name="Configuration"
+        parent="menu_family_hierarchy_root"
+        sequence="99"
+        groups="base.group_user"/>
+
+</odoo>
